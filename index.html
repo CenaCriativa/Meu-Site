@@ -7,6 +7,7 @@
     <meta name="author" content="Cena Criativa">
     <meta name="keywords" content="Storymaking, vídeos, fotos, eventos, captação, marketing">
     <title>Cena Criativa | Storymaking Profissional</title>
+
     <style>
         * {
             box-sizing: border-box;
@@ -187,13 +188,62 @@
             color: #dfdfdf;
         }
 
+        /* Adições de responsividade */
         @media (max-width: 768px) {
+            header img {
+                max-height: 150px;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+                font-size: 1rem;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
             .hero h2 {
                 font-size: 1.8rem;
             }
 
-            .videos video {
+            .hero button {
                 width: 100%;
+                padding: 15px;
+            }
+
+            .services ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .services li {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            .contact a {
+                font-size: 1rem;
+                padding: 15px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+
+            .about p {
+                font-size: 1rem;
+                padding: 10px;
             }
         }
     </style>
@@ -208,12 +258,11 @@
             <a href="#contato">Contato</a>
         </nav>
     </header>
-    
+
     <section id="sobre" class="about">
         <h2>O que é Storymaking?</h2>
         <p>Storymaking é a arte de criar narrativas impactantes em tempo real, combinando imagens e vídeos para engajar seu público de forma autêntica e dinâmica. Na Cena Criativa, transformamos momentos em histórias inesquecíveis.</p>
     </section>
-
 
     <section class="hero">
         <div>
@@ -221,8 +270,6 @@
             <button>Saiba Mais</button>
         </div>
     </section>
-
-    
 
     <section id="portfolio" class="portfolio">
         <h2>Portfólio</h2>
@@ -244,7 +291,8 @@
 
     <section id="servicos" class="services">
         <h2>Nossos Serviços</h2>
-        <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 0; list-style: none;">
+        <ul style="display
+: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 0; list-style: none;">
             <li style="background-color: #000000; color: #dfdfdf; padding: 20px; border-radius: 10px; font-size: 1.2rem; flex: 1 1 calc(45% - 20px); max-width: 45%; text-align: center;">
                 Captação de vídeos e fotos em eventos
             </li>
@@ -262,16 +310,14 @@
             </li>
         </ul>
     </section>
-    
 
     <section id="contato" class="contact">
-<section id="contato" class="contact">
-    <h2>Entre em Contato</h2>
-    <a href="https://api.whatsapp.com/message/56JESGA4ZK5MI1?autoload=1&app_absent=0" target="_blank">WhatsApp</a>
+        <h2>Entre em Contato</h2>
+        <a href="https://api.whatsapp.com/message/56JESGA4ZK5MI1?autoload=1&app_absent=0" target="_blank">WhatsApp</a>
+    </section>
 
-    </form>
-</section>
-
-<footer>
-    <p>&copy; 2025 Cena Criativa. Todos os direitos reservados.</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Cena Criativa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
